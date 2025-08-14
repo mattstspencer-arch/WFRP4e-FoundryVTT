@@ -1,0 +1,142 @@
+{
+  "id": "wfrp4e-core",
+  "title": "WFRP4e - Core Rulebook",
+  "description": "Official Core Rulebook content for the Warhammer Fantasy 4th Edition System. Includes all the tables, rules, bestiary, and lore you need to immerse your players into the perilous world of Warhammer.",
+  "version": "7.1.0",
+  "authors": [
+    {
+      "name": "Moo Man",
+      "email": "russellt@cubicle7games.com",
+      "discord": "moo.man"
+    },
+    {
+      "name": "Published by Cubicle 7",
+      "url": "https://cubicle7games.com",
+      "email": "info@cubicle7games.com"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
+      }
+    ]
+  },
+  "scripts": [
+    "wfrp4e.js",
+    "initialization.js"
+  ],
+  "styles": [
+    "styles.css"
+  ],
+  "packs": [
+    {
+      "name": "actors",
+      "label": "Bestiary (Core Rulebook)",
+      "system": "wfrp4e",
+      "path": "./packs/actors",
+      "type": "Actor",
+      "banner": "./modules/wfrp4e-core/assets/banners/squig.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "items",
+      "label": "Items (Core Rulebook)",
+      "system": "wfrp4e",
+      "path": "./packs/items",
+      "type": "Item",
+      "banner": "./modules/wfrp4e-core/assets/banners/to-market.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "journals",
+      "label": "Journals (Core Rulebook)",
+      "path": "./packs/journals",
+      "type": "JournalEntry",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-core/assets/banners/coachman.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Tables (Core Rulebook)",
+      "type": "RollTable",
+      "name": "tables",
+      "path": "packs/tables",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-core/assets/banners/reikland-council.webp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "scenes",
+      "label": "Scenes (Core Rulebook)",
+      "path": "./packs/scenes",
+      "type": "Scene",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-core/assets/banners/bridge.webp",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Core Rulebook",
+      "sorting": "m",
+      "color": "#465967",
+      "packs": [
+        "actors",
+        "items",
+        "journals",
+        "tables",
+        "scenes"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "flags": {
+    "initializationPacks": [
+      "wfrp4e-core.journals",
+      "wfrp4e-core.scenes",
+      "wfrp4e-core.tables"
+    ],
+    "folder": {
+      "name": "Core Rulebook",
+      "sorting": "m",
+      "color": "#465967"
+    }
+  },
+  "media": [
+    {
+      "type": "setup",
+      "url": "./modules/wfrp4e-core/assets/setup.webp"
+    }
+  ],
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13,
+    "maximum": 13
+  },
+  "protected": false,
+  "url": "https://foundryvtt.com/packages/wfrp4e-core/",
+  "manifest": "https://foundry-c7-manifests.s3.us-east-2.amazonaws.com/wfrp4e-core/module.json"
